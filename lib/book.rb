@@ -1,10 +1,10 @@
 class Book
   
-  def initialize (title)    #when instantiated
+  def initialize (title)    #on start
     @title = title
   end
   
-  def title
+  def title                 #returns title
     @title
   end
   
@@ -14,6 +14,22 @@ class Book
   
   def author              #getter
     @author
+  end
+  
+  def page_count=(num)
+    @page_count = num
+  end
+  
+  def page_count
+    @page_count
+  end
+  
+  def genre=(genre)
+    @genre
+  end
+  
+  def genre
+    @genre
   end
   
 end
